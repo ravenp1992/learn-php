@@ -1,18 +1,20 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-    <h1><?= 'hello World' ?></h1>
-    <p>My first paragraph.</p>
+<?php
 
-    <?php
-    $x = 10;
-    $y = 5;
+require 'vendor/autoload.php';
 
-    echo '<p>'.$x.', '.$y.'</p>';
-    ?>
-</body>
-</html>
+require_once './top_template.html';
+
+use App\DataTypes;
+use App\Helpers\Strings;
+use App\Variables;
+
+Strings::separator('Variables');
+$variables = new Variables();
+$variables->run();
+
+Strings::separator('Data Types');
+
+$dataTypes = new DataTypes();
+$dataTypes->run();
+
+require_once './bot_template.html';
