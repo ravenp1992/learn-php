@@ -10,6 +10,8 @@ trait EchoCode
             echo $value ? 'true' : 'false';
         } elseif (is_array($value)) {
             print_r($value);
+        } elseif (is_object($value)) {
+            echo $value::class;
         } else {
             echo "$value";
         }
