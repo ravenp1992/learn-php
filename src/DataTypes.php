@@ -29,16 +29,16 @@ class DataTypes
         // $this->e($score);
         // $this->e($price);
         // $this->e($greeting);
-        dump($completed);
-        dump($score);
-        dump($price);
-        dump($greeting);
+        // dump($completed);
+        // dump($score);
+        // dump($price);
+        // dump($greeting);
 
         // 4 Compound Types
         // array
-        $names = ['raven', 'kristine', 'ziana', 'zaniya'];
+        // $names = ['raven', 'kristine', 'ziana', 'zaniya'];
         // $this->e($names);
-        dump($names);
+        // dump($names);
         // object
         // $this->e(new stdClass());
         dump(new stdClass());
@@ -49,23 +49,23 @@ class DataTypes
         // resource
         // null
 
-        $sum = $this->sum(2.5, '3');
-        dump($sum);
+        // $sum = $this->sum(2.5, '3');
+        // dump($sum);
 
         // type casting
-        $three = '3';
-        $five = (int) $three;
-        dump($five);
+        // $three = '3';
+        // $five = (int) $three;
+        // dump($five);
 
-        $this->booleans();
+        // $this->booleans();
+        //
+        // $this->integers();
+        //
+        // $this->floats();
+        //
+        // $this->strings();
 
-        $this->integers();
-
-        $this->floats();
-
-        $this->strings();
-
-        $this->nulls();
+        // $this->nulls();
 
         $this->arrays();
     }
@@ -165,7 +165,7 @@ TEXT;
 
         unset($x);
 
-        var_dump($x);
+        dump($x);
 
         dump($x);
 
