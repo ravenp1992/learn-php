@@ -13,6 +13,7 @@ use App\Helpers\Strings;
 use App\Loops;
 use App\OperatorPrecedence;
 use App\Operators;
+use App\SwitchStatement;
 use App\Variables;
 
 Strings::separator('Variables');
@@ -47,5 +48,8 @@ foreach ($loops as $key => $value) {
     echo "<br />";
     print "$key : $value";
 }
+
+Strings::separator('Switch Statement');
+(new SwitchStatement())->run();
 
 require_once './bot_template.html';
