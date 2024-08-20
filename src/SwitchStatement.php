@@ -82,11 +82,11 @@ class SwitchStatement
 
         // to avoid calling x() method multiple times assigned the result to the variable
         // and use that variable inside if, and elseif
-        $test = x();
-        if ($test == 1) { // x() will be called here sleep for 3 seconds
-        } elseif ($test == 2) { // x() will be called here sleep for 3 seconds
-        } elseif ($test == 3) { // x() will be called here sleep for 3 seconds
-        }
+        // $test = x();
+        // if ($test == 1) { // x() will be called here sleep for 3 seconds
+        // } elseif ($test == 2) { // x() will be called here sleep for 3 seconds
+        // } elseif ($test == 3) { // x() will be called here sleep for 3 seconds
+        // }
 
         // in switch statement
         // x() will be called only once
